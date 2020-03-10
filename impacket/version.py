@@ -4,11 +4,8 @@
 # of the Apache Software License. See the accompanying LICENSE file
 # for more information.
 #
-import pkg_resources
-from impacket import __path__
 
+VER_MAJOR = "0"
+VER_MINOR = "9.20-banane"
 
-BANNER = "Impacket v{} - Copyright 2020 SecureAuth Corporation\n".format(pkg_resources.get_distribution('impacket').version)
-
-def getInstallationPath():
-    return 'Impacket Library Installation Path: {}'.format(__path__[0])
+BANNER = "Impacket v%s.%s - Copyright 2019 SecureAuth Corporation\n" % (VER_MAJOR,VER_MINOR)
